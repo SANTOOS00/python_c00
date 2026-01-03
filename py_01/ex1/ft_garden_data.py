@@ -3,10 +3,25 @@
 #                                                         :::      ::::::::    #
 #    ft_garden_data.py                                  :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: moerrais <moerrais@student.42.fr>          +#+  +:+       +#+         #
+#    By: santoos <santoos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/30 22:34:02 by moerrais          #+#    #+#              #
-#    Updated: 2025/12/30 22:34:03 by moerrais         ###   ########.fr        #
+#    Updated: 2026/01/03 07:20:02 by santoos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+class Plant():
+    print ("=== Garden Plant Registry ===")
+    def __init__(self, name, height, age):
+        self.name = name
+        self.height = height
+        self.age = age
+    def print_data(self):
+        print(f"{self.name}: {self.height}cm, {self.age} days old")
+data1 = Plant("Rose", 25, 30)
+data2 = Plant("Sunflower", 80, 45)
+data3 = Plant("Cactus", 15, 120)
+
+data1.print_data()
+data2.print_data()
+data3.print_data()
