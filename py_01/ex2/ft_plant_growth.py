@@ -6,7 +6,7 @@
 #    By: santoos <santoos@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/12/30 20:18:22 by moerrais          #+#    #+#              #
-#    Updated: 2026/01/04 07:57:00 by santoos          ###   ########.fr        #
+#    Updated: 2026/01/04 08:43:43 by santoos          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,9 +32,11 @@ class Plant():
         tmp = self.height
         print ("== Day 1 ==")
         print (self.get_info())
-        for _ in range(6):
+        i = 6
+        while i:
             self.age_hani()
             self.grow()
+            i -=1
         print ("== Day 7 ==")
         print (self.get_info())
         print (f"Growth this week: +{self.height - tmp}cm")
